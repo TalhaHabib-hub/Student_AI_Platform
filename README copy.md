@@ -1,6 +1,8 @@
-# Student AI Platform
+# Student AI Platform (StudyMateAI)
 
 An AI-powered study tool where students can generate quizzes from their own notes, take extracted paper-based tests, and get AI explanations for the questions they get wrong.
+
+![StudyMateAI Home](screenshots/home.png)
 
 ## Tech Stack
 - **Backend:** Laravel 12 (REST API) + Laravel Sanctum (authentication)
@@ -16,12 +18,51 @@ student_ai_platform/
 
 ## Features
 - User registration, login, and profile management (including profile photo upload and account deletion)
-- **AI Quiz Generator** — generate a quiz automatically from source notes using Gemini
+- **AI Quiz Generator** — generate a quiz automatically from pasted notes, photos, PDFs, or text files using Gemini
 - Submit quiz answers and get a scored result (correct/wrong count)
 - Ask the AI to explain any wrong answers on a quiz
 - **Paper Test extraction** — extract test questions (e.g. from an uploaded paper/document) into a structured test
 - Take an extracted paper test, submit answers, and get explanations for wrong answers
 - View history of past quizzes and paper tests
+- **Progress tracking** — charts for accuracy, correct vs wrong answers, and activity by weekday
+- **AI Roadmap** — AI-found strengths, weaknesses, and suggested next steps based on your past mistakes
+- Light / dark mode
+
+## Screenshots
+
+### Landing Page
+![Home](screenshots/home.png)
+![Features](screenshots/features.png)
+
+### Login & Dashboard
+| Login | Dashboard |
+|---|---|
+| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) |
+
+### Generate a Quiz from Your Notes
+Paste notes or upload photos, PDFs, or text files, choose how many questions you want (5–50), and let the AI build the quiz.
+
+| Upload notes | Take the quiz |
+|---|---|
+| ![Generate Quiz](screenshots/generate-quiz.png) | ![Quiz Generated](screenshots/quiz-generated.png) |
+
+### Results & AI Explanations
+Get an instant score, and ask the AI to explain every question you got wrong.
+
+| Quiz results | AI explanation |
+|---|---|
+| ![Quiz Results](screenshots/quiz-results.png) | ![AI Explanation](screenshots/ai-explanation.png) |
+
+### My Quizzes
+![My Quizzes](screenshots/my-quizzes.png)
+
+### Your Progress
+| Overview | Accuracy trend |
+|---|---|
+| ![Progress](screenshots/progress.png) | ![Accuracy Trend](screenshots/accuracy-trend.png) |
+
+### Your Roadmap
+![Roadmap](screenshots/roadmap.png)
 
 ## Database Tables
 `users`, `quizzes`, `paper_tests`, `personal_access_tokens`, `cache`, `jobs`
